@@ -1,0 +1,153 @@
+// src/data/regionData.js — Detailed wine region data for map
+export const REGION_DETAILS = {
+  'Bordeaux': {
+    center: [44.84, -0.58], bounds: [[44.2,-1.2],[45.5,-0.0]],
+    overview: 'Plus grand vignoble d\'AOC au monde. Assemblages légendaires, classements historiques.',
+    climate: 'Océanique tempéré, influence du Gulf Stream. Étés chauds, automnes doux.',
+    surface: '111 000 ha', production: '5,5 millions d\'hl/an',
+    appellations: [
+      {name:'Pauillac',lat:45.19,lng:-0.75,soils:['Graves profondes','Sable graveleux'],climate:'Océanique, vents d\'estuaire',cepages:['Cabernet Sauvignon 60-85%','Merlot 15-30%','Petit Verdot'],style:'Puissant, structuré, garde 20-50 ans',aromas:['Cassis','Cèdre','Graphite','Tabac'],color:'#4A1520'},
+      {name:'Saint-Julien',lat:45.16,lng:-0.74,soils:['Graves günziennes','Argile sous gravier'],climate:'Océanique, protégé',cepages:['Cabernet Sauvignon 55-70%','Merlot 25-35%'],style:'Équilibré, classique, élégant',aromas:['Mûre','Violette','Vanille','Réglisse'],color:'#5A1020'},
+      {name:'Margaux',lat:45.04,lng:-0.67,soils:['Graves fines','Sable blanc'],climate:'Océanique doux',cepages:['Cabernet Sauvignon 50-75%','Merlot 20-40%'],style:'Finesse, soyeux, parfumé',aromas:['Violette','Fruits noirs','Épices douces','Boisé fin'],color:'#6B1E2C'},
+      {name:'Saint-Estèphe',lat:45.25,lng:-0.77,soils:['Argile','Graves','Calcaire'],climate:'Océanique, frais',cepages:['Cabernet Sauvignon 50-65%','Merlot 30-40%'],style:'Corsé, tannique, rustique jeune',aromas:['Cassis','Poivre','Cuir','Terre'],color:'#3A0F18'},
+      {name:'Saint-Émilion',lat:44.89,lng:-0.15,soils:['Calcaire à astéries','Argile','Sable'],climate:'Océanique continental',cepages:['Merlot 60-90%','Cabernet Franc 10-35%'],style:'Rond, généreux, fruité',aromas:['Cerise','Prune','Truffe','Chocolat'],color:'#8B2252'},
+      {name:'Pomerol',lat:44.93,lng:-0.19,soils:['Argile bleue','Graves','Crasse de fer'],climate:'Océanique modéré',cepages:['Merlot 80-100%','Cabernet Franc'],style:'Velouté, opulent, complexe',aromas:['Truffe','Mûre','Violette','Prune'],color:'#6B1E2C'},
+      {name:'Pessac-Léognan',lat:44.77,lng:-0.63,soils:['Graves pyrénéennes','Sable','Argile'],climate:'Océanique urbain, chaud',cepages:['Cabernet Sauvignon','Merlot','Sauvignon (blancs)'],style:'Élégant, minéral, rouges et blancs',aromas:['Fumée','Cassis','Agrumes','Pierre'],color:'#5A3040'},
+      {name:'Sauternes',lat:44.53,lng:-0.34,soils:['Graves','Calcaire','Argile'],climate:'Brumes matinales, botrytis',cepages:['Sémillon 80%','Sauvignon Blanc','Muscadelle'],style:'Liquoreux, or, miel, garde infinie',aromas:['Miel','Abricot','Safran','Agrumes confits'],color:'#D68A1A'},
+    ],
+  },
+  'Bourgogne': {
+    center: [47.05, 4.84], bounds: [[46.5,3.5],[47.5,5.2]],
+    overview: 'Terre du Pinot Noir et du Chardonnay. Terroirs parcellaires, Premiers et Grands Crus.',
+    climate: 'Semi-continental, hivers froids, étés chauds. Gel de printemps fréquent.',
+    surface: '30 000 ha', production: '1,5 million d\'hl/an',
+    appellations: [
+      {name:'Gevrey-Chambertin',lat:47.22,lng:4.97,soils:['Calcaire de Comblanchien','Marne','Éboulis'],climate:'Continental, coteau est',cepages:['Pinot Noir 100%'],style:'Puissant, charpenté pour la Bourgogne',aromas:['Cassis','Réglisse','Sous-bois','Cuir'],color:'#4A1520'},
+      {name:'Vosne-Romanée',lat:47.17,lng:4.96,soils:['Marne calcaire','Argile rouge'],climate:'Continental, mi-coteau',cepages:['Pinot Noir 100%'],style:'Finesse absolue, velouté, complexe',aromas:['Cerise','Rose','Épices','Truffe'],color:'#772133'},
+      {name:'Nuits-Saint-Georges',lat:47.14,lng:4.95,soils:['Calcaire','Marne','Cailloutis'],climate:'Continental',cepages:['Pinot Noir 100%'],style:'Ferme, terreux, garde',aromas:['Mûre','Sous-bois','Gibier','Cuir'],color:'#5A1020'},
+      {name:'Meursault',lat:46.98,lng:4.77,soils:['Calcaire blanc','Marne'],climate:'Continental tempéré',cepages:['Chardonnay 100%'],style:'Gras, beurré, noisette',aromas:['Beurre','Noisette','Miel','Tilleul'],color:'#D4B040'},
+      {name:'Puligny-Montrachet',lat:46.95,lng:4.75,soils:['Calcaire dur','Argile blanche'],climate:'Continental frais',cepages:['Chardonnay 100%'],style:'Minéral, tendu, pur',aromas:['Citron','Amande','Silex','Fleurs blanches'],color:'#C8B050'},
+      {name:'Chablis',lat:47.81,lng:3.80,soils:['Kimméridgien (fossiles)','Calcaire'],climate:'Continental froid, gel',cepages:['Chardonnay 100%'],style:'Tranchant, iodé, minéral',aromas:['Citron vert','Craie','Huître','Pierre à fusil'],color:'#A0B060'},
+      {name:'Pommard',lat:47.00,lng:4.79,soils:['Argile rouge ferreuse','Calcaire'],climate:'Continental',cepages:['Pinot Noir 100%'],style:'Robuste, coloré, tannique',aromas:['Cerise noire','Épices','Terre','Réglisse'],color:'#5A1030'},
+    ],
+  },
+  'Champagne': {
+    center: [49.04, 3.95], bounds: [[48.7,3.2],[49.5,4.5]],
+    overview: 'Le vin des rois. Méthode champenoise, assemblage de crus et de millésimes.',
+    climate: 'Océanique septentrional, le plus froid des vignobles français. Craie = chaleur stockée.',
+    surface: '34 000 ha', production: '2,5 millions d\'hl/an',
+    appellations: [
+      {name:'Montagne de Reims',lat:49.15,lng:4.05,soils:['Craie','Calcaire','Marne'],climate:'Froid, exposé nord-est',cepages:['Pinot Noir 70%','Chardonnay','Pinot Meunier'],style:'Structure, puissance, vineux',aromas:['Pain grillé','Fruits rouges','Noisette'],color:'#C8A96A'},
+      {name:'Côte des Blancs',lat:48.95,lng:3.96,soils:['Craie pure','Belemnites'],climate:'Froid, exposé est',cepages:['Chardonnay 100%'],style:'Finesse, élégance, minéral',aromas:['Agrumes','Brioche','Craie','Fleurs blanches'],color:'#E8D880'},
+      {name:'Vallée de la Marne',lat:49.05,lng:3.70,soils:['Marne','Argile','Sable'],climate:'Océanique, humide',cepages:['Pinot Meunier 60%','Pinot Noir','Chardonnay'],style:'Fruité, souple, accessible',aromas:['Pomme','Poire','Brioche'],color:'#D4B060'},
+    ],
+  },
+  'Rhône': {
+    center: [44.70, 4.83], bounds: [[43.7,4.3],[45.6,5.3]],
+    overview: 'Deux vignobles en un : Septentrional (Syrah) et Méridional (Grenache). Diversité unique.',
+    climate: 'Continental au nord, méditerranéen au sud. Mistral omniprésent.',
+    surface: '71 000 ha', production: '3 millions d\'hl/an',
+    appellations: [
+      {name:'Côte-Rôtie',lat:45.47,lng:4.81,soils:['Schiste','Gneiss','Micaschiste'],climate:'Continental, coteaux abrupts',cepages:['Syrah 80-100%','Viognier 0-20%'],style:'Intense, épicé, élégant, grande garde',aromas:['Olive noire','Violette','Lard fumé','Poivre'],color:'#3A0F18'},
+      {name:'Hermitage',lat:45.08,lng:4.84,soils:['Granite','Schiste','Loess','Calcaire'],climate:'Continental, coteau sud',cepages:['Syrah 100% (rouge)','Marsanne/Roussanne (blanc)'],style:'Monumental, concentré, 30-50 ans de garde',aromas:['Cassis','Cuir','Graphite','Fumée'],color:'#2A0A12'},
+      {name:'Condrieu',lat:45.46,lng:4.77,soils:['Granite décomposé','Arzelle'],climate:'Continental doux',cepages:['Viognier 100%'],style:'Opulent, floral, abricot',aromas:['Abricot','Pêche','Violette','Épices douces'],color:'#D4A030'},
+      {name:'Châteauneuf-du-Pape',lat:44.06,lng:4.83,soils:['Galets roulés','Argile rouge','Sable'],climate:'Méditerranéen, mistral fort',cepages:['Grenache 50-80%','Syrah','Mourvèdre','13 cépages autorisés'],style:'Généreux, chaleureux, complexe',aromas:['Garrigue','Cerise','Épices','Réglisse'],color:'#5A1020'},
+      {name:'Gigondas',lat:44.17,lng:5.00,soils:['Calcaire','Argile','Sable'],climate:'Méditerranéen, Dentelles de Montmirail',cepages:['Grenache 60-80%','Syrah','Mourvèdre'],style:'Puissant, fruité, solaire',aromas:['Fruits noirs','Garrigue','Cacao','Poivre'],color:'#6B1E2C'},
+    ],
+  },
+  'Loire': {
+    center: [47.30, 0.50], bounds: [[46.8,-2.0],[47.8,3.2]],
+    overview: 'Le jardin de la France. 800 km de diversité, du Muscadet au Sancerre.',
+    climate: 'Océanique à l\'ouest, continental à l\'est. Douceur angevine.',
+    surface: '70 000 ha', production: '4 millions d\'hl/an',
+    appellations: [
+      {name:'Sancerre',lat:47.33,lng:2.84,soils:['Silex','Calcaire kimméridgien','Argile'],climate:'Continental',cepages:['Sauvignon Blanc (blanc)','Pinot Noir (rouge)'],style:'Vif, minéral, agrumes',aromas:['Pamplemousse','Buis','Silex','Groseille'],color:'#A0C040'},
+      {name:'Vouvray',lat:47.42,lng:0.80,soils:['Tuffeau','Argile à silex','Calcaire'],climate:'Océanique tempéré',cepages:['Chenin Blanc 100%'],style:'Sec à moelleux, grande garde, versatile',aromas:['Coing','Acacia','Miel','Pomme'],color:'#D4B060'},
+      {name:'Chinon',lat:47.17,lng:0.24,soils:['Tuffeau','Graves','Argile'],climate:'Océanique doux',cepages:['Cabernet Franc 100%'],style:'Fruité, poivré, digeste',aromas:['Framboise','Poivron','Violette','Réglisse'],color:'#772133'},
+      {name:'Muscadet',lat:47.10,lng:-1.55,soils:['Gneiss','Granite','Amphibolite'],climate:'Océanique, humide',cepages:['Melon de Bourgogne 100%'],style:'Léger, iodé, sur lie',aromas:['Citron','Iode','Pomme verte','Levure'],color:'#C0D070'},
+      {name:'Savennières',lat:47.38,lng:-0.64,soils:['Schiste','Rhyolite volcanique'],climate:'Océanique, coteaux sud',cepages:['Chenin Blanc 100%'],style:'Sec, puissant, minéral, grande garde',aromas:['Tillleul','Cire','Miel','Silex'],color:'#B0A040'},
+    ],
+  },
+  'Alsace': {
+    center: [48.15, 7.30], bounds: [[47.8,7.0],[48.5,7.6]],
+    overview: 'Vins blancs aromatiques, mono-cépages. Protégée par les Vosges, la plus sèche de France.',
+    climate: 'Semi-continental, sec. Vosges bloquent les pluies. Automnes longs et ensoleillés.',
+    surface: '15 500 ha', production: '1,1 million d\'hl/an',
+    appellations: [
+      {name:'Riesling Grand Cru',lat:48.17,lng:7.30,soils:['Granite','Calcaire','Schiste','Grès'],climate:'Semi-continental sec',cepages:['Riesling 100%'],style:'Sec, minéral, pureté, grande garde',aromas:['Citron vert','Pétrole','Fleurs blanches','Silex'],color:'#B0C850'},
+      {name:'Gewurztraminer',lat:48.08,lng:7.28,soils:['Marne calcaire','Argile','Grès rose'],climate:'Semi-continental',cepages:['Gewurztraminer 100%'],style:'Aromatique, épicé, exotique',aromas:['Litchi','Rose','Épices','Fruits exotiques'],color:'#D4A030'},
+      {name:'Pinot Gris',lat:48.19,lng:7.32,soils:['Calcaire','Marne','Loess'],climate:'Semi-continental',cepages:['Pinot Gris 100%'],style:'Riche, fumé, opulent',aromas:['Abricot','Fumée','Miel','Noisette'],color:'#C8B060'},
+    ],
+  },
+  'Languedoc': {
+    center: [43.30, 3.20], bounds: [[42.5,1.8],[43.9,4.2]],
+    overview: 'Renaissance qualitative spectaculaire. Terroirs variés, prix doux, vins de caractère.',
+    climate: 'Méditerranéen. Chaud, sec, venteux (tramontane). 300 jours de soleil/an.',
+    surface: '228 000 ha', production: '12 millions d\'hl/an',
+    appellations: [
+      {name:'Pic Saint-Loup',lat:43.77,lng:3.82,soils:['Calcaire dur','Argile','Cailloutis'],climate:'Méditerranéen d\'altitude',cepages:['Syrah 50%+','Grenache','Mourvèdre'],style:'Frais pour le sud, élégant, fruité',aromas:['Fruits rouges','Garrigue','Épices','Olive'],color:'#5A2030'},
+      {name:'Corbières',lat:43.10,lng:2.70,soils:['Schiste','Calcaire','Grès'],climate:'Méditerranéen venteux',cepages:['Carignan','Grenache','Syrah','Mourvèdre'],style:'Puissant, rustique, sauvage',aromas:['Garrigue','Cerise noire','Thym','Réglisse'],color:'#4A1520'},
+      {name:'Faugères',lat:43.57,lng:3.18,soils:['Schiste pur'],climate:'Méditerranéen',cepages:['Syrah','Grenache','Mourvèdre','Carignan'],style:'Minéral, fin, schiste',aromas:['Fruits noirs','Pierre','Épices','Cacao'],color:'#5A1020'},
+    ],
+  },
+  'Provence': {
+    center: [43.45, 6.25], bounds: [[43.0,5.2],[43.9,7.0]],
+    overview: 'Capitale mondiale du rosé. Mais aussi rouges profonds à Bandol et blancs racés.',
+    climate: 'Méditerranéen. Mistral, 2800h de soleil/an, peu de pluie.',
+    surface: '27 000 ha', production: '1,3 million d\'hl/an',
+    appellations: [
+      {name:'Bandol',lat:43.15,lng:5.75,soils:['Calcaire','Argile','Trias'],climate:'Méditerranéen maritime',cepages:['Mourvèdre 50%+','Grenache','Cinsault'],style:'Rouge profond, épicé, garde 10-25 ans',aromas:['Olive noire','Cuir','Épices','Fruits noirs'],color:'#3A0F18'},
+      {name:'Côtes de Provence',lat:43.45,lng:6.25,soils:['Schiste','Calcaire','Sable'],climate:'Méditerranéen',cepages:['Grenache','Cinsault','Mourvèdre','Rolle'],style:'Rosé pâle, frais, élégant',aromas:['Pamplemousse','Pêche','Garrigue','Amande'],color:'#F0C0B0'},
+    ],
+  },
+  'Sud-Ouest': {
+    center: [43.80, 1.00], bounds: [[42.8,-1.5],[44.9,2.2]],
+    overview: 'Le vignoble secret. Cépages autochtones uniques (Tannat, Négrette, Petit Manseng).',
+    climate: 'Océanique à continental. Influence pyrénéenne au sud.',
+    surface: '50 000 ha',
+    appellations: [
+      {name:'Cahors',lat:44.45,lng:1.44,soils:['Calcaire du causse','Argile','Graves'],climate:'Continental',cepages:['Malbec 70%+','Merlot','Tannat'],style:'Le « vin noir », dense, tannique',aromas:['Fruits noirs','Truffe','Violette','Cacao'],color:'#2A0A12'},
+      {name:'Madiran',lat:43.53,lng:-0.08,soils:['Argile','Galets','Sable'],climate:'Océanique pyrénéen',cepages:['Tannat 60%+','Cabernet Franc','Cabernet Sauvignon'],style:'Puissant, rustique, grande garde',aromas:['Fruits noirs','Épices','Cuir','Réglisse'],color:'#3A0F18'},
+      {name:'Jurançon',lat:43.27,lng:-0.40,soils:['Argile','Galets','Poudingue'],climate:'Pyrénéen, foehn',cepages:['Petit Manseng','Gros Manseng'],style:'Moelleux doré, acidité vive',aromas:['Ananas','Mangue','Miel','Épices'],color:'#D4A030'},
+    ],
+  },
+  'Beaujolais': {
+    center: [46.12, 4.66], bounds: [[45.8,4.4],[46.4,4.9]],
+    overview: '10 crus aux personnalités distinctes. Gamay sur granite, vins de fruit et de terroir.',
+    climate: 'Semi-continental, influence méditerranéenne au sud.',
+    surface: '16 500 ha',
+    appellations: [
+      {name:'Morgon',lat:46.15,lng:4.68,soils:['Schiste','Roche pourrie (gore)'],climate:'Semi-continental',cepages:['Gamay 100%'],style:'Charnu, terroir marqué, garde 5-10 ans',aromas:['Cerise','Noyau','Pierre','Kirsch'],color:'#772133'},
+      {name:'Moulin-à-Vent',lat:46.20,lng:4.72,soils:['Granite rose','Manganèse'],climate:'Semi-continental',cepages:['Gamay 100%'],style:'Le « seigneur du Beaujolais », puissant',aromas:['Rose fanée','Épices','Iris','Truffe'],color:'#5A1020'},
+      {name:'Fleurie',lat:46.19,lng:4.70,soils:['Granite','Sable granitique'],climate:'Semi-continental doux',cepages:['Gamay 100%'],style:'Floral, soyeux, féminin',aromas:['Iris','Violette','Cerise','Pivoine'],color:'#8B3545'},
+    ],
+  },
+  'Jura': {
+    center: [46.80, 5.85], bounds: [[46.5,5.5],[47.1,6.2]],
+    overview: 'Vins uniques : vin jaune, vin de paille, Savagnin. Terroir de montagne exceptionnel.',
+    climate: 'Continental montagnard. Froid, humide, grandes amplitudes.',
+    surface: '2 000 ha',
+    appellations: [
+      {name:'Château-Chalon',lat:46.76,lng:5.75,soils:['Marne bleue','Calcaire'],climate:'Continental froid',cepages:['Savagnin 100%'],style:'Vin jaune, oxydatif, 6 ans en fût, immortel',aromas:['Noix','Curry','Pomme verte','Safran'],color:'#C8A030'},
+      {name:'Arbois',lat:46.90,lng:5.77,soils:['Marne grise','Calcaire','Trias'],climate:'Continental',cepages:['Poulsard','Trousseau','Savagnin','Chardonnay'],style:'Rouges pâles, blancs oxydatifs ou ouillés',aromas:['Cerise pâle','Noisette','Pomme','Épices'],color:'#C07070'},
+    ],
+  },
+  'Savoie': {
+    center: [45.55, 5.92], bounds: [[45.2,5.5],[45.9,6.4]],
+    overview: 'Vins de montagne frais et vifs. Cépages autochtones : Jacquère, Mondeuse, Altesse.',
+    climate: 'Montagnard, froid. Lacs et versants sud réchauffent.',
+    surface: '2 100 ha',
+    appellations: [
+      {name:'Apremont',lat:45.50,lng:5.95,soils:['Éboulis calcaires','Molasse'],climate:'Montagnard',cepages:['Jacquère 100%'],style:'Blanc vif, perlant, alpin',aromas:['Citron','Pomme verte','Pierre','Herbe'],color:'#B0C850'},
+    ],
+  },
+  'Corse': {
+    center: [42.15, 9.10], bounds: [[41.4,8.5],[43.0,9.6]],
+    overview: 'Île de beauté viticole. Nielluccio, Sciacarello, terroirs maritimes uniques.',
+    climate: 'Méditerranéen maritime. Chaud mais venteux.',
+    surface: '7 000 ha',
+    appellations: [
+      {name:'Patrimonio',lat:42.70,lng:9.35,soils:['Calcaire','Schiste','Argile'],climate:'Méditerranéen venteux',cepages:['Nielluccio (rouge)','Vermentinu (blanc)'],style:'Rouge puissant, blanc parfumé',aromas:['Fruits rouges','Maquis','Herbes','Épices'],color:'#5A2030'},
+    ],
+  },
+};
